@@ -176,7 +176,7 @@ h4:hover {
 }
 .boton-cito:hover {
   transition: all 1.5s;
-  transform: scale(1.2) translate(-80px, -20px);
+  transform: scale(1.2) translate(80px, 20px);
 }
 
 h5 {
