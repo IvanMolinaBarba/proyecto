@@ -1,0 +1,14 @@
+
+.campeones{
+    color:$color-negrito;
+    font-size: 21px;
+    font-family:sans-serif;
+    padding: 1em;
+    background-color: lightblue;
+
+    &:hover {
+    color:darkblue;
+    background-color: $color-blanquito;
+    font-size: 21px;
+    }
+}

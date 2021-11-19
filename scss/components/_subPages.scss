@@ -1,0 +1,32 @@
+
+h2:hover {
+    color:($color-principal);
+    text-shadow: $shadow-titulo;
+    
+}
+
+.bodyCito {
+    background-color: $bg-color;
+    margin: 5px;
+    padding: 0;
+}
+
+.copaArgentina {
+    display: $display-flex;
+    justify-content:$text-align-center;
+    align-items: $text-align-center;
+    flex-direction: $flex-column;
+    text-align:$text-align-center;
+}
+
+.alinear {
+    text-align: $text-align-center;
+    color: $color-negrito;
+    font-size: 18px;
+}
+
+.loguito:hover {
+    transition: 2s;
+    transform:rotate(-360deg);
+}
+

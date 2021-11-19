@@ -1,0 +1,436 @@
+@charset "UTF-8";
+/*Sizes*/
+/*Margins y medidas*/
+/*Paddings*/
+/*Fonts*/
+/*Texts*/
+/*Colores Principales*/
+/*Colores Página*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:ital,wght@0,200;0,300;1,200;1,300&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+}
+
+.nav-general {
+  background-color: #5E8800;
+  color: wheat;
+}
+
+.nav-general #logo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 0.6em;
+}
+
+.menu a:hover {
+  background-color: #660000;
+  padding: 15px 10px;
+}
+
+.campeones {
+  color: black;
+  font-size: 21px;
+  font-family: sans-serif;
+  padding: 1em;
+  background-color: lightblue;
+}
+.campeones:hover {
+  color: darkblue;
+  background-color: white;
+  font-size: 21px;
+}
+
+#paragraph {
+  word-spacing: 2px;
+  text-transform: capitalize;
+  background-color: #90B902D9;
+}
+#paragraph:hover {
+  color: white;
+  background-color: #1311b0;
+  transition: all 2s;
+  transform: translateX(1px);
+  font-size: 19px;
+}
+
+.batagglia {
+  color: ivory;
+}
+.batagglia:hover {
+  text-decoration: underline;
+  color: ivory;
+}
+
+h1:hover {
+  color: white;
+  background-color: black;
+}
+
+h3:hover {
+  transform: translate(50px, 50px);
+  transition: 0.8s;
+  color: blue;
+  text-shadow: #f3f364 5px 2px 4px;
+}
+
+h4:hover {
+  color: blue;
+  transform: translate(10px 10px);
+  transition: 0.8s;
+  background-color: yellow;
+}
+
+.batagglia {
+  color: ivory;
+  text-decoration: none;
+}
+.batagglia:hover {
+  text-decoration: underline;
+  color: ivory;
+}
+
+.diegoArmando {
+  font-size: 1em;
+  color: black;
+  font-style: italic;
+}
+
+.diego-armando {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.row {
+  padding: 10px;
+}
+
+.card-title {
+  text-decoration: underline;
+  color: black;
+}
+
+#footer {
+  background-color: #90B902D9;
+}
+#footer nav {
+  padding: 10px;
+}
+#footer nav ul li {
+  color: black;
+  font-style: italic;
+  font-size: 2em;
+  list-style-type: none;
+}
+@media screen and (max-width: 968px) {
+  #footer {
+    background-color: cadetblue;
+  }
+}
+
+.suscripcionPagina {
+  background-color: #750000;
+  word-spacing: 1em;
+}
+.suscripcionPagina:hover {
+  animation: changeColor 4s;
+  color: white;
+}
+
+.whatsApp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.whatsApp:hover {
+  transition: all 0.5s;
+  transform: scale(1.5) translateX(-1em) translateY(-1em);
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  list-style: circle;
+  font-size: 12px;
+  color: white;
+}
+
+.boton-cito {
+  margin: 1em;
+  background-color: #2b0b0b;
+  font-style: normal;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.boton-cito:hover {
+  transition: all 1.5s;
+  transform: scale(1.1) translateX(80px);
+}
+
+h5 {
+  text-shadow: #db6f17 5px 2px 4px;
+  text-decoration: underline;
+}
+h5:hover {
+  color: #cc0000;
+  transition: 1.5s;
+  transform: translateX(400px);
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #13746a;
+  }
+  15% {
+    border-radius: 20%;
+  }
+  25% {
+    width: 800px;
+  }
+  50% {
+    background-color: yellowgreen;
+  }
+  100% {
+    background-color: teal;
+  }
+}
+h2:hover {
+  color: blue;
+  text-shadow: #f3f364 5px 2px 4px;
+}
+
+.bodyCito {
+  background-color: yellowgreen;
+  margin: 5px;
+  padding: 0;
+}
+
+.copaArgentina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.alinear {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
+
+.loguito:hover {
+  transition: 2s;
+  transform: rotate(-360deg);
+}
+
+h2:hover {
+  color: blue;
+  text-shadow: #f3f364 5px 2px 4px;
+}
+
+.grid-container {
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: repeat(4, 150px);
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+}
+
+.grid-item {
+  border: 2px solid black;
+}
+
+.grid-item:first-child {
+  grid-row: 1/span 2;
+  grid-column: 1/span 2;
+}
+
+.grid-item:nth-child(2) {
+  grid-row: 1/span 2;
+  grid-column: 3/span 4;
+}
+
+.grid-item:nth-child(4) {
+  grid-row: 3/span 2;
+  grid-column: 3/span 3;
+}
+
+.grid-item:nth-child(8) {
+  grid-row: 3/span 2;
+  grid-column: 6/span 2;
+}
+
+.grid-item:nth-child(7) {
+  grid-column: 1/span 2;
+}
+
+.grid-item:nth-child(6) {
+  grid-column: 1/span 2;
+}
+
+.TituloImagenes {
+  color: black;
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.elBody {
+  background-color: white;
+}
+
+.loguito:hover {
+  transition: 2s;
+  transform: rotate(-360deg);
+}
+
+/*MediaQuerys*/
+/* Mobile*/
+@media screen and (max-width: 480px) {
+  .elBody {
+    background-color: blue;
+  }
+
+  .TituloImagenes {
+    color: white;
+    background-color: black;
+    letter-spacing: 1px;
+  }
+}
+/* Tablet*/
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  .elBody {
+    background-color: black;
+  }
+
+  .TituloImagenes {
+    color: #6666ff;
+    background-color: white;
+    letter-spacing: 2px;
+  }
+}
+/* Desktop*/
+@media screen and (min-width: 961px) {
+  .elBody {
+    background-color: white;
+  }
+
+  .TituloImagenes {
+    color: black;
+  }
+}
+#paragraph {
+  margin: 1px;
+  padding: 10px;
+  font-style: initial;
+  line-height: normal;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  margin: 5px;
+  padding: 10px 5% 1em 1rem;
+  font-style: normal;
+  line-height: normal;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  margin: 8px;
+  padding: 18px 5% 1em 1rem;
+  font-style: "Poppins", sans-serif;
+  line-height: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-size: 45px;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  margin: 10px;
+  padding: 10px 5% 1em 1rem;
+  font-style: normal;
+  line-height: normal;
+  font-family: "Nunito", sans-serif;
+  font-size: 45px;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: left;
+}
+
+h4 {
+  margin: 8px;
+  padding: 10px 5% 1em 1rem;
+  font-style: normal;
+  line-height: normal;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: black;
+  letter-spacing: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h5 {
+  margin: 5px;
+  padding: 18px 5% 1em 1rem;
+  font-style: normal;
+  line-height: normal;
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.suscripcionPagina {
+  margin: 30px;
+  padding: 20px 5% 1em 2rem;
+  font-style: italic;
+  line-height: normal;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 100%;
+  text-align: left;
+}
+
+.suscripcionPagina {
+  border-radius: 50px;
+  border-bottom: 4px dotted red;
+  border-top: 3px dotted green;
+  border-left: 6px solid yellow;
+  border-right: 8px solid yellow;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+@mixin varios-parametros($margin , $padding , $font-style, $line-height, $font-family , $font-size ,$color , $letter-spacing, $font-weight , $text-align)
+{ 
+    margin: $margin;
+    padding: $padding;
+    font-style: $font-style; 
+    line-height: $line-height;
+    font-family: $font-family; 
+    font-size: $font-size;
+    color:$color;
+    letter-spacing: $letter-spacing;
+    font-weight: $font-weight;
+    text-align: $text-align;
+}
+
+#paragraph {
+    @include varios-parametros(1px , $diezPixeles, initial, $font-principal, $font-family-subtitulo, $margin-cuatro, $color-negrito,2px ,$font-negrita ,$text-align-center)
+}
+
+h1 {
+    @include varios-parametros(5px, $padding-principal, $font-principal, $font-principal, $font-family-titulo, $margin-cuatro, $color-negrito, 2px , $font-negrita , center)
+
+}
+
+h2 {
+    @include varios-parametros($margin-tercero, $padding-cuarto, $font-family-subtitulo, $font-family-subtitulo, $font-family-titulo, $size-terciario , $color-negrito, 2px , $font-negrita , $text-align-center)
+}
+
+h3 {
+    @include varios-parametros($diezPixeles, $padding-principal, $font-principal, $font-principal, $font-family-titulo, $size-terciario , $color-negrito, 2px , $font-negrita , left)
+
+}
+
+h4 {
+    @include varios-parametros ($margin-tercero, $padding-principal, $font-principal, $font-principal, $font-family-subtitulo, $size-cuarto , $color-negrito, 4px , $font-negrita , center)
+}
+
+h5 {
+    @include varios-parametros (5px, $padding-cuarto, $font-principal, $font-principal, $font-family-titulo, 22px , $color-blanquito, 3px , $font-negrita , left)
+}
+
+.suscripcionPagina {
+    @include varios-parametros(30px ,$padding-tercero , $font-italic, $font-principal, $font-family-subtitulo, $margin-cuatro , $color-blanquito, 2px, 100%, left)
+}
+

@@ -1,0 +1,99 @@
+
+#footer { 
+    background-color:$color-siete;
+        nav {
+            padding: $diezPixeles;
+            ul {
+                li{
+                    color: $color-negrito;
+                    font-style: $font-italic;
+                    font-size: 2em;
+                    list-style-type: none;
+                }
+            }
+        }
+@media screen and (max-width:968px)  {
+    background-color: cadetblue;
+}        
+
+}
+
+.suscripcionPagina {
+    background-color:darken($color-terciario , 27%);
+    word-spacing: 1em ;
+
+    &:hover{
+    animation: changeColor 4s;
+    color: $color-blanquito;
+    }
+} 
+
+.whatsApp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    &:hover {
+    transition: all 0.5s;
+    transform: scale(1.5) translateX(-1em) translateY(-1em);
+    }
+}
+
+.categories{
+    display: $display-flex;
+    justify-content:space-around;
+    flex-direction: row;
+    list-style:circle;
+    font-size: 12px;
+    color:$color-blanquito;
+}
+
+.boton-cito {
+    margin: 1em;
+    background-color:darken($color-secundario , 30% ) ;
+    font-style: $font-principal;
+    font-size: 21px;
+    font-weight:$font-negrita;
+    letter-spacing: 2px;
+
+    &:hover {
+    transition: all 1.5s ;
+    transform:scale(1.1) translateX(80px) ;
+    }
+}
+
+
+h5 {
+    text-shadow: $shadow-subtitulo;
+    text-decoration: $text-decoration-underline;
+
+    &:hover{
+    color: darken($color-terciario , 10%);
+    transition: 1.5s;
+    transform:translateX(400px)
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: darken(turquoise, 30%) ;
+    }
+
+    15% {
+        border-radius: 20%;
+
+    }
+
+    25%{
+        width: 800px;
+    }
+
+    50% {
+        background-color:$bg-color;
+    }
+
+    100% {
+        background-color: teal;
+        
+    }
+}

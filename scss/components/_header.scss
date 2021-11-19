@@ -1,0 +1,23 @@
+
+.nav-general{
+    background-color:$color-ocho;
+    color: wheat;
+}
+
+.nav-general #logo {
+    font-family:$font-family-text;
+    margin-left: 0.6em;
+}
+
+.menu a:hover{
+    background-color: darken($color-terciario , 30%);
+    padding: 15px $diezPixeles;
+}
+   
+
+
+
+
+
+
+   

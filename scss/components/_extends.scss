@@ -1,0 +1,12 @@
+%borde {
+    border-radius: $size-general;
+    border-bottom: 4px dotted $color-terciario;
+    border-top: 3px dotted green;
+    border-left: 6px solid $color-patito;
+    border-right: $margin-tercero solid $color-patito;
+}
+
+.suscripcionPagina {
+    @extend %borde
+}
+

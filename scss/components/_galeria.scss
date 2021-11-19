@@ -1,0 +1,107 @@
+
+h2:hover {
+    color:($color-principal);
+    text-shadow: $shadow-titulo;
+
+}
+
+
+.grid-container {
+    display: grid;
+    border: 2px solid $color-negrito;
+    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(7 ,1fr);
+    gap: 15px ;
+}
+
+.grid-item {
+    border: 2px solid $color-negrito;
+}
+
+.grid-item:first-child {
+    
+    grid-row: 1 / span 2;
+    grid-column: 1/ span 2;  
+}
+
+.grid-item:nth-child(2) {
+    grid-row: 1 / span 2;
+    grid-column: 3/ span 4;
+}
+
+.grid-item:nth-child(4) {
+    grid-row: 3 / span 2;
+    grid-column: 3/ span 3;
+}
+
+.grid-item:nth-child(8) {
+    grid-row: 3 / span 2;
+    grid-column: 6/ span 2;
+}
+
+.grid-item:nth-child(7) {
+    grid-column: 1/ span 2;
+}
+
+.grid-item:nth-child(6) {
+    grid-column: 1/ span 2;
+}
+
+.TituloImagenes {
+    color: $color-negrito;
+    background-color: $bg-color;
+    display: $display-flex;
+    justify-content: $text-align-center;
+    font-style: $font-italic;
+    letter-spacing: 3px;
+}
+
+.elBody {
+    background-color:$color-blanquito;
+}
+
+.loguito:hover {
+    transition: 2s;
+    transform:rotate(-360deg);
+}
+
+/*MediaQuerys*/
+
+/* Mobile*/
+
+@media screen and (max-width:480px) {
+    .elBody {
+        background-color: $color-principal;
+    }
+
+    .TituloImagenes {
+        color: $color-blanquito;
+        background-color: $color-negrito;
+        letter-spacing: 1px;
+    }
+}
+
+/* Tablet*/
+
+@media screen and (min-width:481px) and (max-width:960px) {
+    .elBody {
+        background-color: $color-negrito;
+    }
+    .TituloImagenes {
+        color: lighten($color-principal, 20%);
+        background-color: $color-blanquito;
+        letter-spacing: 2px;
+    }
+}
+
+/* Desktop*/
+
+@media screen and (min-width:961px) {
+    .elBody  {
+        background-color:$color-blanquito;
+    }
+
+    .TituloImagenes {
+        color:$color-negrito;
+    }
+}

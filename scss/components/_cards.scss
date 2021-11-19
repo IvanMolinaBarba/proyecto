@@ -1,0 +1,56 @@
+h1:hover{ 
+    color:$color-blanquito;
+    background-color: $color-negrito;
+}
+
+h3:hover {
+    transform: translate($size-general, $size-general);
+    transition: 0.8s;
+    color: $color-principal;
+    text-shadow: $shadow-titulo;
+}
+
+h4:hover {
+    color:$color-principal;
+    transform: translate($diezPixeles $diezPixeles);
+    transition: 0.8s;
+    background-color: $color-patito;
+}
+
+.batagglia{
+    color:$color-ivo;
+    text-decoration: none;
+
+    &:hover {
+    text-decoration: $text-decoration-underline;
+    color:$color-ivo;  
+    }
+}
+
+.diegoArmando {
+    font-size: 1em;
+    color:$color-negrito;
+    font-style: $font-italic;
+}
+    
+.diego-armando {
+    display: $display-flex;
+    justify-content: space-around;
+    flex-direction:$flex-column;
+    align-items:$text-align-center;
+    margin: $margin-cuatro;
+    
+}
+    
+.row {
+    padding: $diezPixeles;
+}
+
+.card-title {
+    text-decoration: $text-decoration-underline;
+    color:$color-negrito;
+}
+    
+    
+    
+    
