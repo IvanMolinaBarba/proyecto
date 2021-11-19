@@ -65,7 +65,7 @@
 
 h5 {
     text-shadow: $shadow-subtitulo;
-    text-decoration: $text-decoration-underline;
+    text-decoration: none;
 
     &:hover{
     color: darken($color-terciario , 10%);
