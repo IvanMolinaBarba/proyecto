@@ -71,6 +71,9 @@ body {
 
 h1:hover {
   color: white;
+}
+
+h1 {
   background-color: black;
 }
 
@@ -118,6 +121,10 @@ h4:hover {
 .card-title {
   text-decoration: underline;
   color: black;
+}
+
+.gire:hover {
+  translate: 360px;
 }
 
 #footer {
