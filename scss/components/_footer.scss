@@ -65,10 +65,11 @@
     font-size: 21px;
     font-weight:$font-negrita;
     letter-spacing: 2px;
+    overflow-y: hidden;
 
     &:hover {
     transition: all 1.5s ;
-    transform:scale(1.2) translate(80px , 20px) ;
+    transform:scale(1.2) translate(5px , 5px) ;
     }
 }
 
