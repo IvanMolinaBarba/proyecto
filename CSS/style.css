@@ -158,15 +158,6 @@ h6 {
   }
 }
 
-.suscripcionPagina {
-  background-color: #750000;
-  word-spacing: 1em;
-}
-.suscripcionPagina:hover {
-  animation: changeColor 4s;
-  color: white;
-}
-
 .whatsApp {
   position: fixed;
   bottom: 0;

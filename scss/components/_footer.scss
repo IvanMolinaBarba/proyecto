@@ -18,15 +18,6 @@
 
 }
 
-.suscripcionPagina {
-    background-color:darken($color-terciario , 27%);
-    word-spacing: 1em ;
-
-    &:hover{
-    animation: changeColor 4s;
-    color: $color-blanquito;
-    }
-} 
 
 .whatsApp {
     position: fixed;
